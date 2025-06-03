@@ -13,14 +13,3 @@ alert("Bonjour"+ " " + name + " " + prenom)
 alert("Il te reste" + " " +(chiffre-age) + " " 
 + "Années à travailler avant la retraite ! Courage ! En développant ce sera plus fun ! ")
 
-
-
-/*
-let student = {
-		name : "Ada",
-		age : "999",
-		learning : "coding"
-	}
-    console.log(student)
-
-*/
