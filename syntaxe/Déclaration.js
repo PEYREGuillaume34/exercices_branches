@@ -3,13 +3,13 @@
 // tu affecteras respectivement ton nom et prénom (choisis un nom pertinent pour chaque variable !).
 // Avec l’instruction alert(……), tu afficheras "Bonjour, nom prénom".
 
-const chiffre = 64
-let age = 42
+
 let name = "Peyre"
 let prenom = "Guillaume"
+const chiffre = 64
+let age = 42
 
-
-alert("Bonjour"+ " " + name + " " + prenom)
-alert("Il te reste" + " " +(chiffre-age) + " " 
-+ "Années à travailler avant la retraite ! Courage ! En développant ce sera plus fun ! ")
+//console.log("Bonjour"+ " " + name + " " + prenom)
+console.log(`Bonjour ${name} ${prenom}`)
+console.log(`Il te reste ${chiffre-age} Années à travailler avant la retraite ! Courage ! En développant ce sera plus fun ! `)
 
