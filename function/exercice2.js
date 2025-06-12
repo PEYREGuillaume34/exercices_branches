@@ -1,4 +1,4 @@
-let x =  prompt("Entrée un nombre")
+let x =  9
 
 function carre(number){
     return Math.pow(number,2)
