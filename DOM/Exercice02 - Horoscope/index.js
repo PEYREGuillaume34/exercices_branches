@@ -19,8 +19,8 @@ const horoscope = [
   }
 ];
 
-// On sélectionne l'élément du DOM avec l'ID "horoscope" pour y injecter dynamiquement le contenu
-const signChoisi = document.getElementById("astro")
+// On sélectionne l'élément du DOM avec l'ID "astro" pour y injecter dynamiquement le contenu
+const contenu = document.getElementById("astro")
 
 // Boucle à travers chaque élément du tableau `horoscope`
 for (const item of horoscope) {
@@ -32,16 +32,15 @@ for (const item of horoscope) {
   const texte = document.createElement("p");
   texte.textContent = item.description; // On y insère le texte humoristique
 
-  // Ajout des éléments <h2> et <p> dans le <div id="horoscope"> du DOM
-  signChoisi.appendChild(titre);
-  signChoisi.appendChild(texte);
+  // Ajout des éléments <h2> et <p> dans le <div id="astro"> du DOM
+  contenu.appendChild(titre);
+  contenu.appendChild(texte);
 }
 
 
 
 
 // Remarque :
-// Le TODO pourrait être supprimé puisque la ligne est déjà écrite juste après.
 
 // Pour une amélioration future, tu pourrais envisager de structurer chaque bloc avec un div parent, pour styliser chaque signe plus facilement via CSS.
 
