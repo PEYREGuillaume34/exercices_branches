@@ -6,7 +6,7 @@
 
 // //2
 // let i = 0;
-// while (i<=99){
+// while (i<=99){               // ou != strictement inférieur
 //     console.log(i);
 //     i++;
 // };
@@ -22,8 +22,8 @@
 
 
 // //5
-// let i = 50;
-// while (i>0){
-//     console.log(i);
-//     i--;
-// };
+let i = 50;
+while (i>0){
+    console.log(i);
+    i--;
+};
