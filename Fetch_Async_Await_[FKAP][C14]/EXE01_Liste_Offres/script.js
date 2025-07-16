@@ -1,6 +1,15 @@
+  function affichCharge() {
+  const conteneur = document.getElementById("chargeDebut");
+  const chargement = document.createElement("p");
+  chargement.innerText = "Chargement des offres…";
+  conteneur.appendChild(chargement);
+}
+
+affichCharge();
+
 
 async function fetchOffers(){
-    const response = await fetch('https://codepassport.dev/api/offers'); // on appelle fetch avec une URL d'API
+    const response = await fetch('https://www.codepassport.dev/api/offers'); // on appelle fetch avec une URL d'API
     console.log(response); // affiche la promesse retournée par fetch
 
     const data = await response.json(); // <-- maintenant tu obtiens le JSON
@@ -16,8 +25,10 @@ async function fetchOffers(){
 
     offres.appendChild(titre);
     offres.appendChild(description);
-
 }
+// document.getElementById("chargeDebut").style.display = "none";
+document.getElementById("chargeDebut").innerHTML = "";
+
 }
 
 fetchOffers()
