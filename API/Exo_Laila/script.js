@@ -1,23 +1,26 @@
-async function movies() {
-    const response = await fetch('https://www.the-one-api.dev/v2/movie', {
-        headers: { Authorization: "Bearer GVeTGNvHZopfMwTwXkwl" }
-    });
-    console.log(response);
+async function movies(){
+    const response = await fetch('https://the-one-api.dev/v2/movie',{
+        headers: {Authorization:"Bearer GVeTGNvHZopfMwTwXkwl"}})
+        console.log(response);
+    
+    const data = await response.json(); 
+    console.log(data);
 
-    const data = await response.json();
+    const filmList = document.getElementById("films")
+    for (let item of data.docs){
+    let list = document.createElement("li");
+    let nom = document.createElement("h3");
+    let budget = document.createElement("p");
 
-    const filmList = document.getElementById("films");
+    
+    nom.innerHTML = item.name;
+    budget.innerHTML = ` a couté ${item.budgetInMillions} millions de $`;
+   
 
-    for (let item of data.docs) {
-        let nom = document.createElement("h1");
-        let budget = document.createElement("p");
-
-        nom.innerHTML = item.name;
-        budget.innerHTML = `Budget: ${item.budgetInMillions} millions`;
-
-        filmList.appendChild(nom);
-        filmList.appendChild(budget);
+    filmList.appendChild(list);
+    list.appendChild(nom);
+    list.appendChild(budget);
     }
 }
 
-movies();
+movies()
