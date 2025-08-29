@@ -1,16 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
-/* ===========================
-   Base
-   =========================== */
+
 body {
   font-family: "Instrument Serif", serif;
   letter-spacing: 0.5rem;
 }
 
-/* ===========================
-   Titres
-   =========================== */
+
 h1 {
   font-size: 8rem;
   font-weight: bold;
@@ -25,9 +21,7 @@ h2 {
   text-transform: uppercase;
 }
 
-/* ===========================
-   Grille principale
-   =========================== */
+
 main {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;   /* une grande colonne + deux petites */

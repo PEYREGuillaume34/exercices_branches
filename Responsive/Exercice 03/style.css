@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+
+body{
+  height: 100vh;
+  font-family: 'Josefin Sans', sans-serif;
+  border: 2px;
+  margin: 0;
+  font-size: 16px;
+}
+
+
+#container {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  padding:3rem;
+  max-width: 100%;
+  width: 150px;
+  height: auto;
+}
+
+.photo {
+  width: auto;
+}
+
+.title {
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+  line-height: 2.5rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+#were{
+  color: hsl(0, 36%, 70%);
+}
+
+#coming{
+  color: hsl(0, 6%, 24%);
+}
+
+.text {
+  margin-bottom: 1rem;
+  text-align: center;
+  color: hsl(0, 36%, 70%);
+  padding: 1rem;
+}
+
+#emailInput {
+  display: flex;
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 5px;
+  border: 1px solid hsl(0, 36%, 70%);
+  justify-content: center;
+  align-items: center;
+}
+
+#button {
+  border-radius: 50%;
+}
+
+#searchContainer{
+  display: flex;
+  flex-direction: row;
+
+}
+
+
+.attribution {
+  font-size: 13px;
+}
