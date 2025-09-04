@@ -13,7 +13,6 @@ body {
 }
 
 #my-grid {
-  height: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr); /*viewport width*/
   grid-template-rows: repeat(3, 1fr);
